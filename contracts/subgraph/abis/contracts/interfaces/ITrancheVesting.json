@@ -1,0 +1,108 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "time",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "VestedFraction",
+        "type": "uint128"
+      }
+    ],
+    "name": "SetTranche",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "i",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTranche",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "time",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "vestedFraction",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct Tranche",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTranches",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "time",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "vestedFraction",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct Tranche[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "time",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "vestedFraction",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct Tranche[]",
+        "name": "_tranches",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "setTranches",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
