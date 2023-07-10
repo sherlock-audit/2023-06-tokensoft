@@ -82,3 +82,25 @@ ___
 
 # Audit scope
 
+
+[contracts @ 59780e3b7a982d6667c898ad5cbee774b754bd76](https://github.com/SoftDAO/contracts/tree/59780e3b7a982d6667c898ad5cbee774b754bd76)
+- [contracts/contracts/claim/BasicDistributor.sol](contracts/contracts/claim/BasicDistributor.sol)
+- [contracts/contracts/claim/CrosschainContinuousVestingMerkle.sol](contracts/contracts/claim/CrosschainContinuousVestingMerkle.sol)
+- [contracts/contracts/claim/CrosschainTrancheVestingMerkle.sol](contracts/contracts/claim/CrosschainTrancheVestingMerkle.sol)
+- [contracts/contracts/claim/Satellite.sol](contracts/contracts/claim/Satellite.sol)
+- [contracts/contracts/claim/abstract/AdvancedDistributor.sol](contracts/contracts/claim/abstract/AdvancedDistributor.sol)
+- [contracts/contracts/claim/abstract/CrosschainDistributor.sol](contracts/contracts/claim/abstract/CrosschainDistributor.sol)
+- [contracts/contracts/claim/abstract/CrosschainMerkleDistributor.sol](contracts/contracts/claim/abstract/CrosschainMerkleDistributor.sol)
+- [contracts/contracts/claim/abstract/Distributor.sol](contracts/contracts/claim/abstract/Distributor.sol)
+- [contracts/contracts/claim/abstract/MerkleSet.sol](contracts/contracts/claim/abstract/MerkleSet.sol)
+- [contracts/contracts/interfaces/IConnext.sol](contracts/contracts/interfaces/IConnext.sol)
+- [contracts/contracts/interfaces/ICrosschain.sol](contracts/contracts/interfaces/ICrosschain.sol)
+- [contracts/contracts/interfaces/IDistributor.sol](contracts/contracts/interfaces/IDistributor.sol)
+- [contracts/contracts/interfaces/IXReceiver.sol](contracts/contracts/interfaces/IXReceiver.sol)
+- [contracts/contracts/claim/ContinuousVestingMerkle.sol](contracts/contracts/claim/ContinuousVestingMerkle.sol)
+- [contracts/contracts/claim/PriceTierVestingMerkle.sol](contracts/contracts/claim/PriceTierVestingMerkle.sol)
+- [contracts/contracts/claim/PriceTierVestingSale_2_0.sol](contracts/contracts/claim/PriceTierVestingSale_2_0.sol)
+- [contracts/contracts/claim/abstract/TrancheVesting.sol](contracts/contracts/claim/abstract/TrancheVesting.sol)
+
+
+
