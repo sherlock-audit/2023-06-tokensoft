@@ -1,0 +1,230 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_implementation",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract FlatPriceSale",
+        "name": "clone",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "merkleRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "saleMaximum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userMaximum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "purchaseMinimum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxQueueTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "URI",
+            "type": "string"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Config",
+        "name": "config",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "baseCurrency",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract AggregatorV3Interface",
+        "name": "nativeOracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "nativePaymentsEnabled",
+        "type": "bool"
+      }
+    ],
+    "name": "NewSale",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "merkleRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "saleMaximum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userMaximum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "purchaseMinimum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxQueueTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "URI",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct Config",
+        "name": "_config",
+        "type": "tuple"
+      },
+      {
+        "internalType": "string",
+        "name": "_baseCurrency",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "_nativePaymentsEnabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_nativeTokenPriceOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface[]",
+        "name": "oracles",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint8[]",
+        "name": "decimals",
+        "type": "uint8[]"
+      }
+    ],
+    "name": "newSale",
+    "outputs": [
+      {
+        "internalType": "contract FlatPriceSale",
+        "name": "sale",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
